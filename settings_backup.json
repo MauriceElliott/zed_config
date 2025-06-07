@@ -1,7 +1,7 @@
 // Zed settings
 {
   "show_edit_predictions": false,
-  "agent": {
+  "assistant": {
     "default_model": {
       "provider": "copilot_chat",
       "model": "gemini-2.5-pro"
@@ -9,10 +9,10 @@
     "version": "2"
   },
   "vim_mode": false,
-  "ui_font_size": 15,
-  "buffer_font_size": 14.5,
-  "buffer_font_family": "Dank Mono",
-  "ui_font_family": "Dank Mono",
+  "ui_font_size": 13.5,
+  "buffer_font_size": 12.5,
+  "buffer_font_family": "DepartureMono Nerd Font",
+  "ui_font_family": "DepartureMono Nerd Font",
   "current_line_highlight": "all",
   "buffer_font_features": {
     "liga": true
