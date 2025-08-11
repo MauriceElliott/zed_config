@@ -1,18 +1,36 @@
 // Zed settings
 {
-  "show_edit_predictions": false,
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+      "enterprise_uri": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "show_edit_predictions": true,
   "agent": {
+    "play_sound_when_agent_done": true,
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "always_allow_tool_actions": true,
+    "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gemini-2.5-pro"
+      "model": "gpt-4.1"
     },
-    "version": "2"
   },
   "vim_mode": false,
   "ui_font_size": 15,
-  "buffer_font_size": 14.5,
+  "buffer_font_size": 13.5,
   "buffer_font_family": "Annotation Mono",
-  "ui_font_family": "Dank Mono",
+  "ui_font_family": "Annotation Mono",
   "current_line_highlight": "all",
   "buffer_font_features": {
     "liga": true
@@ -20,7 +38,7 @@
   "theme": {
     "mode": "system",
     "light": "macOS Classic Light",
-    "dark": "macOS Classic Dark"
+    "dark": "Automata Day"
   },
   "show_whitespaces": "boundary",
   "project_panel": {
@@ -56,6 +74,12 @@
   "languages": {
     "Lua": {
       "format_on_save": "off" // This will disable format on save for Lua files
+    },
+    "Swift": {
+      "enable_language_server": true,
+      "language_servers": ["sourcekit-lsp"],
+      "formatter": "language_server",
+      "format_on_save": "on"
     }
   },
   "show_completions_on_input": false
